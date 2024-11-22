@@ -1,0 +1,73 @@
+body{
+    font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background:linear-gradient(to right, #cfb53b, #9e8c37, #cfb53b);
+            color: rgb(43, 43, 43);
+}
+.home{
+            text-align: center;
+            padding: 50px 20px;
+            margin: 0;
+            margin-top: 60px;
+            margin-left: 50px;
+            margin-right: 50px;
+            background-color: #cccccc;
+            border-radius: 20px;
+            border: black solid 5px;
+}
+header{
+    text-align: center;
+    padding: 20px;
+    color:black;
+}
+button{
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid #010f00;
+    background-color: #C9B037;
+    transition-duration: 0.2s;
+}
+button:hover {
+    background-color: #AF9500; 
+    color: #5a4d00;
+    cursor: pointer;
+  }
+  #coin1{
+    width:100px;
+    height:90px;
+    position: relative;
+    left: 1000px;
+  }
+  #coin2{
+    width:100px;
+    height:90px;
+    position: relative;
+    left: 100px;
+  }
+  #coin3{
+    width:100px;
+    height:90px;
+    position: relative;
+    left: 400px;
+  }
+  #carrinho{
+    width:100px;
+    height:100px;
+    margin-bottom: 10px;
+  }
+  #pergunta{
+    width:130px;
+    height:130px;
+    margin-bottom: 10px;
+  }
+  #moeda{
+    width:130px;
+    height:130px;
+    margin-bottom: 10px;
+  }
+  #form{
+    width:170px;
+    height:110px;
+    margin-bottom: 10px;
+  }
