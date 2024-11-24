@@ -1,0 +1,95 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ffe76d, #c2a723, #ffe76d); /* Gradiente de fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    height: 100vh;
+    padding: 20px;
+}
+
+ h3 {
+    color: #333;
+    text-align: center;
+    margin-top: 180px; /* Espaçamento entre o título e o próximo elemento */
+}
+#form{
+    width:180px;
+    height:180px;
+  }
+
+/* Estilo do formulário */
+.form {
+    background-color: #cccccc;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    border: black solid 3px; /* Borda do formulário */
+}
+
+/* Estilo do título do formulário */
+.form h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333333;
+}
+
+/* Estilo dos rótulos */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* Estilo dos campos de entrada e textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    color: #333333;
+}
+
+/* Estilo do botão */
+button {
+    display: block;
+    width: 100%;
+    background-color: #C9B037; /* Cor de fundo do botão */
+    color: black;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #AF9500; /* Cor do botão quando passar o mouse */
+    color: #333333;
+}
+
+/* Estilo da seta de navegação */
+#seta {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#seta:hover {
+    transform: scale(1.1); /* Efeito de aumento no hover */
+}
