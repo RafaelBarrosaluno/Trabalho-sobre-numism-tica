@@ -6,18 +6,26 @@
   
   body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: linear-gradient(to right, #99841a, #ffdb29, #99841a); 
   }
   
   header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background-color: rgb(100, 100, 100);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
   }
   
   h1 {
     font-size: 24px;
+  }
+  header h1 {
+    flex-grow: 5;
+    text-align: center;
+    font-size: 30px;
+    
   }
   
   .product-container {
@@ -36,9 +44,9 @@
   }
   
   .product img {
-    width: 100%;
+    width: 200px;
     height: auto;
-    max-height: 200px;
+    max-height: 500px;
     object-fit: cover;
     border-radius: 8px;
   }
@@ -50,7 +58,7 @@
   
   .product p {
     font-size: 14px;
-    color: #555;
+    color: rgb(0, 0, 0);
     margin-bottom: 15px;
   }
   
@@ -65,5 +73,11 @@
   
   .btn:hover {
     background-color: #555;
+  }
+
+  .back-button img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
   }
   
