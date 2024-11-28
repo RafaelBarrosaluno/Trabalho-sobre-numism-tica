@@ -3,93 +3,152 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #ffe76d, #c2a723, #ffe76d); /* Gradiente de fundo */
+    background: linear-gradient(to right, #ffe76d, #c2a723, #ffe76d);
+    color: #333333;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; /* Organiza os elementos verticalmente */
-    height: 100vh;
-    padding: 20px;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
- h3 {
-    color: #333;
-    text-align: center;
-    margin-top: 180px; /* Espaçamento entre o título e o próximo elemento */
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-#form{
-    width:180px;
-    height:180px;
-  }
+
+/* Introdução */
+.intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #444444;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#form {
+    width: 150px;
+    height: 150px;
+    margin: 20px 0;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
 
 /* Estilo do formulário */
 .form {
-    background-color: #cccccc;
-    padding: 20px 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 600px;
-    border: black solid 3px; /* Borda do formulário */
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
 }
 
-/* Estilo do título do formulário */
-.form h1 {
-    font-size: 1.8rem;
+.form h2 {
+    font-size: 2rem;
     margin-bottom: 20px;
-    text-align: center;
+    color: #555555;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
     color: #333333;
 }
 
-/* Estilo dos rótulos */
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #000000;
-}
-
-/* Estilo dos campos de entrada e textarea */
 input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 15px;
-    border: 1px solid #dddddd;
-    border-radius: 4px;
-    color: #333333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Estilo do botão */
+input:focus,
+textarea:focus {
+    border-color: #c2a723;
+    box-shadow: 0 0 5px rgba(194, 167, 35, 0.5);
+    outline: none;
+}
+
 button {
     display: block;
     width: 100%;
-    background-color: #C9B037; /* Cor de fundo do botão */
-    color: black;
+    background-color: #c9b037;
+    color: white;
     border: none;
-    padding: 10px;
+    padding: 12px;
     font-size: 1rem;
+    border-radius: 5px;
     cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s;
 }
 
 button:hover {
-    background-color: #AF9500; /* Cor do botão quando passar o mouse */
-    color: #333333;
+    background-color: #af9500;
+    transform: scale(1.05);
 }
 
-/* Estilo da seta de navegação */
+/* Estilo da seta */
 #seta {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 80px;
-    height: 80px;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 
 #seta:hover {
-    transform: scale(1.1); /* Efeito de aumento no hover */
+    transform: scale(1.1);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background-color: #444;
+    color: white;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .form {
+        padding: 20px;
+    }
+
+    #form {
+        width: 100px;
+        height: 100px;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
 }
